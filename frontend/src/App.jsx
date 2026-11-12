@@ -119,7 +119,7 @@ function App() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/projects");
+        const response = await fetch("/api/projects");
 
         if (!response.ok) {
           throw new Error("Could not load projects");
